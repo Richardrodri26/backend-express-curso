@@ -4,6 +4,7 @@ const { config } = require('./../config/config');
 const setupModels = require('./../db/models');
 
 const options = {
+  host: "localhost",
   dialect: 'postgres',
   logging: config.isProd ? false : true,
 }
